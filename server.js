@@ -13,6 +13,8 @@ var express =  require('express')
 // HEROKU
 
 var PORT = process.env.PORT || 3000;
+var MONGOURI = process.env.MONGOLAB_URI ||
+'mongodb://localhost:27017/forums_app'
 
 // SET
 
@@ -50,7 +52,7 @@ server.use(function(req,res){
 
 // DATABASE + SERVER
 
-mongoose.connect('mongodb://localhost:27017/forums_app')
+mongoose.connect(MONGOURI)
 var db = mongoose.connection;
 
 db.on('error', function(){
