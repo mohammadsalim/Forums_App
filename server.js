@@ -10,6 +10,10 @@ var express =  require('express')
     mongoose =  require('mongoose'),
     session =   require('express-session');
 
+// HEROKU
+
+var PORT = process.env.PORT || 3000;
+
 // SET
 
 server.set('views', './views');
@@ -55,7 +59,7 @@ db.on('error', function(){
 
 db.once('open', function(){
   console.log("DeathStar shields are operational.");
-  server.listen(3000, function(){
+  server.listen(PORT, function(){
     console.log("DeathStar superlaser is primed and ready.")
   });
 });
