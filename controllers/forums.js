@@ -40,7 +40,14 @@ router.post('/', function(req, res){
 // SHOW
 
 router.get('/:id', function(req, res){
-
+var forumId = req.params.id;
+Forum.findOne({_id: forumId}, function(err, foundForum) {
+  if (err) {
+    console.log(err)
+  } else {
+    res.render('forums/show', {forum: foundForum})
+    }
+  })
 });
 
 // DELETE

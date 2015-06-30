@@ -2,6 +2,7 @@ html {
   background: url('/images/background.png');
   background-position: center;
   background-repeat: repeat;
+  color: white;
 }
 .header {
   width: 100%;
@@ -15,3 +16,6 @@ html {
   color: #FFF3B0;
   font-family: 'Poiret One', cursive;
 }
+.table { display:table; }
+.table-row { display:table-row; }
+.table-cell { display:table-cell; }
