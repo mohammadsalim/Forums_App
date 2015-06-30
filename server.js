@@ -40,7 +40,7 @@ server.use(expressLayouts);
 
 // ROUTES + CONTROLLERS
 
-var forumsController = require('/controllers/forums.js')
+var forumsController = require('./controllers/forums.js')
 server.use('/forums', forumsController);
 
 server.get('/', function(req,res){
