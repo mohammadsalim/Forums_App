@@ -5,17 +5,20 @@
   <title>Forums App</title>
   <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="header">
     <h1 class="header-text">The Arcanaeum</h1>
   <div class="nav-bar">
-    <button class="nav home" type="button">Forum</button>
-    <button class="nav login" type="button">Login</button>
-    <button class="nav register" type="button">Sign-Up</button>
+    <button id="homeButton" class="nav home" type="button">Forum</button>
+    <button id="loginButton" class="nav login" type="button">Login</button>
+    <button id="signupButton" class="nav register" type="button">Sign-Up</button>
+    <button id="newButton" class="nav new" type="button">New Post</button>
     <form class="search-bar">
-      <input type="text" placeholder="Search..." required>
-      <input type="button" value="Search">
+      <input class="search" type="text" placeholder="Search..." required>
+      <input class="nav search" type="button" value="Search">
     </form>
   </div></div>
   <%- body %>
