@@ -1,10 +1,12 @@
-<form action="/forums" method="post">
-  <label>Author: </label>
-  <input type= "text" name= "forum[author]" placeholder= "Full Name"/>
-  <label>Title: </label>
-  <input type="text" name= "forum[title]"/>
-  <label>Subject: </label>
-  <input type="text" name= "forum[subject]"/>
-  <textarea name="forum[content]"></textarea>
+<h3>Create a new post?</h3>
+<form class="forum" action="/forums" method="post">
+  <label class="label">Author: </label>
+  <input class="input" type= "text" name= "forum[author]" placeholder= "ie: Darth Vader"/></br>
+  <label class="label">Title: </label>
+  <input class="input" type="text" name= "forum[title]" placeholder="ie: DeathStar Life"/></br>
+  <label class="label">Subject: </label>
+  <input class="input" type="text" name= "forum[subject]" placeholder="ie: Star Wars"/></br>
+  <label class="label">Content: </label>
+  <textarea class="textarea" name="forum[content]" placeholder="What do you wish to share?"></textarea>
   <input type="submit" value="Post"/>
 </form>
