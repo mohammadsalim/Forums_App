@@ -13,8 +13,8 @@ body {
   color: white;
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0 1em;
+  margin: 1em 0;
 }
 .header {
   width: 100%;
@@ -36,6 +36,12 @@ body {
 }
 .table {
   display: table;
+  border: 1px outset #FFF3B0;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 50%;
 }
 .table-row {
    display: table-row;
@@ -52,20 +58,31 @@ body {
 }
 .forum .textarea {
   height: 6em;
+  resize: none;
 }
 .forum .input {
   height: 2em;
   line-height: 1em;
 }
 .forum .label {
-  margin: 0.5em 0;
+  margin: 1em 0 0.25em 0;
 }
 input[type='submit'] {
+  transition:
+  background 0.3s ease,
+  color 0.3s ease,
+  box-shadow 0.3s ease;
   border: 0;
   height: 3em;
+  width: 10em;
   color: #335C67;
   background: #FFF3B0;
+  margin-top: 1em;
+  float: right;
 }
 input[type='submit']:hover {
   cursor: pointer;
+  color: white;
+  background: #E09F3E;
+  box-shadow: 1px 3px 10px cyan;
 }
